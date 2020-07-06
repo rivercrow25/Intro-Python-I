@@ -26,7 +26,7 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [string.upper() for string in a]
 
 print(y)
 
@@ -34,8 +34,8 @@ print(y)
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
-
+x = [int(i) for i in x]
 # What do you need between the square brackets to make it work?
-y = []
+y = [n for n in x if n % 2 == 0]
 
 print(y)
